@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Dancing+Script&family=Noto+Sans+KR&family=Raleway:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.comfort {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0px 15px;
+    /* border: 1px solid red; */
+}
+
+header {
+    background-image: url(./img/header__backgr.png);
+    background-size: cover;
+    padding: 20px;
+    padding-bottom: 135px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+} */
+header nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+header nav ul li a {
+    font-family: 'Raleway', sans-serif;
+    color: green;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header .comfort .logo {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    border-radius: 3px;
+    background-color: green;
+}
+
+header nav ul li a:hover {
+    color: white;
+    background-color: green;
+}
+
+header nav ul li a span{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin-left: 10px;
+}
+
+.header__bc h1 {
+    color: #4E9F0D;
+    font-family: Raleway;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+
+header h2 {
+    color: #4E9F0D;
+    font-family: Raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+header .once {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-variant: small-caps;
+    margin: 30px 0 50px;
+}
+
+header .second {
+    background-color: green;
+    width: 350px;
+    height: 100px;
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 360px) {
+    header h1 {
+        font-size: 55px;
+    }
+}
+
+
+main .main__img {
+    position: relative;
+}
+
+main .main__img button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 50px;
+    background-color: #4E9F0D;
+    border: 1px solid #4E9F0D;
+    font-size: 20px;
+    color: white;
+}
+
+main .comfort ul li {
+    display: inline-block;
+    padding: 15px;
+    color: white;
+}
+
+main .comfort ul a {
+    color: white;
+}
+
+main .comfort ul a.active {
+    color: #4E9F0D;
+}
+
+main .main__text h2 {
+    margin-top: 15px;
+    width: 188px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #4E9F0D;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+main .main__text p {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+main {
+    background-color: black;
+}
+
+main .main__img {
+    position: relative;
+}
+
+main .main__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width:1115px) {
+    main .main__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:765px) {
+    main .main__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.center__tags {
+    background-image: url(./img/center__tags.png);
+    height: 560px;
+}
+
+.center__tags h2 {
+    padding-top: 40px;
+    text-align: center;
+    color: #4E9F0D;
+    font-family: Raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.center__tags p {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    font-variant: small-caps;
+}
+
+.bold__line {
+    background-color: black;
+}
+
+.bold__line h2 {
+    text-align: center;
+    color: #4E9F0D;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.maps iframe {
+    width: 100%;
+}
+
+.footer {
+    background-color: #000;
+    height: 250px;
+    padding-top: 50px;
+}
+
+.footer .comfort .q {
+    background-color: #4E9F0D;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 100px;
+    border-radius: 3px;
+    padding-top: 5px;
+}
+
+.e {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .comfort .w {
+    color: #4E9F0D;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer .comfort ul{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer .comfort ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.footer .comfort ul li a {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+}
+.small__text{
+    text-align: center;
+    font-size: 10px;
+    color: rgb(139, 139, 139);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="comfort">
+            <nav>
+                <a href="#" class="logo">Street88</a>
+                <ul>
+                    <li><a href="#">Корзина<span>2</span></a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__bc">
+                <h1>Большой гамбургер</h1>
+                <h2>говядина</h2>
+                <p class="once">Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом, - таков классический портрет гамбургера, наиболее распространенной «быстрой» еды в США, от отравления которой ежедневно на больничных койках оказываются десятки тысяч американцев</p>
+                <p class="second">14 500</p>
+            </div>
+        </div>
+    </header>
+    <main> 
+        <div class="comfort">
+            <ul>
+                <li><a href="#" class="active">Гамбургеры </a></li>
+                <li><a href="#">Хот доги</a></li>
+                <li><a href="#">Пицца</a></li>
+                <li><a href="#">Напитки</a></li>
+                <li><a href="#">Соки</a></li>
+            </ul>
+            <section>
+                <div class="main__cards">
+                    <div class="main__card">
+                        <div class="main__img">
+                            <img src="./img/gamburger__header.png" alt="">
+                            <button>14 500</button>
+                        </div>
+                        <div class="main__text">
+                            <h2>C  ГОВЯДИНОЙ</h2>
+                            <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
+                        </div>
+                    </div>
+                    <div class="main__card">
+                        <div class="main__img">
+                            <img src="./img/gamburger__header.png" alt="">
+                            <button>14 500</button>
+                        </div>
+                        <div class="main__text">
+                            <h2>C  ГОВЯДИНОЙ</h2>
+                            <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
+                        </div>
+                    </div>
+                    <div class="main__card">
+                        <div class="main__img">
+                            <img src="./img/gamburger__header.png" alt="">
+                            <button>14 500</button>
+                        </div>
+                        <div class="main__text">
+                            <h2>C  ГОВЯДИНОЙ</h2>
+                            <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
+                        </div>
+                    </div>
+                    <div class="main__card">
+                        <div class="main__img">
+                            <img src="./img/gamburger__header.png" alt="">
+                            <button>14 500</button>
+                        </div>
+                        <div class="main__text">
+                            <h2>C  ГОВЯДИНОЙ</h2>
+                            <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
+                        </div>
+                    </div>
+                    <div class="main__card">
+                        <div class="main__img">
+                            <img src="./img/gamburger__header.png" alt="">
+                            <button>14 500</button>
+                        </div>
+                        <div class="main__text">
+                            <h2>C  ГОВЯДИНОЙ</h2>
+                            <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
+                        </div>
+                    </div>
+                    <div class="main__card">
+                        <div class="main__img">
+                            <img src="./img/gamburger__header.png" alt="">
+                            <button>14 500</button>
+                        </div>
+                        <div class="main__text">
+                            <h2>C  ГОВЯДИНОЙ</h2>
+                            <p>Свежая хрустящая булочка, листики салата, маринованный огурец с луком и небольшая котлета, сдобренная майонезом и кетчупом</p>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="center__tags">
+        <div class="comfort">
+            <h2>Уникальная рецептура</h2> <br> <br> <br>
+            <p>Гамбургер является разновидностью сэндвича, состоящей из жареной рубленой котлеты, что подается внутри разрезанной круглой булки. Он обычно дополняется разнообразными приправами, к примеру, листьями салата, кетчупом и майонезом, дольками маринованного огурца, помидора или кабачка, сырым или поджаренным луком.</p> <br> <br> 
+            <p>Будучи наиболее распространенной «быстрой» едой в США, гамбургер имеет далеко не американское происхождение. Ученые приписывают его авторство кочевникам-скифам, которые клали обжаренное мясо между двумя хлебными ломтиками. А в Новый свет «король» фаст-фуда приехал вместе с немецкими иммигрантами: его назвали, кстати, в честь Гамбурга, второго по масштабам города Германии. Официальной датой продажи первого гамбургера в США считается 27 июля 1900-го - в этот день гастроном из Нью-Хейвена предложил жителям города покупать приправленную кетчупом котлету, «зажатую» между двумя кусками булки. Изначально такая еда была прерогативой бедных слоев населения, но вскоре по всей стране стали открываться «фаст-фудовые» заведения, в которых, быстрым было не только питание, но и обслуживание, и смена клиентов. Эти общепиты взяли курс на оперативное детское питание - и для всегда занятого рабочего класса на тот момент они стали лучшим решением проблемы, где и чем быстро накормить детей.</p>
+        </div>
+    </div>
+    <div class="bold__line">
+        <div class="comfort">
+            <h2>Наши филиалы</h2>
+        </div>
+    </div>
+    <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.260881869214!2d67.82328607530107!3d40.114189273998576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b295978fbea4c5%3A0x2b76244284308efa!2sTeamit%20Academy!5e0!3m2!1sru!2s!4v1690135143416!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer">
+        <div class="comfort">
+            <div class="e">
+                <div class="q">Street88</div>
+                <div class="w">+998 88 007 82 32</div>
+            </div>
+            <ul>
+                <li><a href="#">Меню</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Telegram Bot</a></li>
+            </ul>
+            <div class="small__text">Сайт разработан в целях обучения © PROWEB 2019</div>
+        </div>
+    </div>
+</body>
+</html
