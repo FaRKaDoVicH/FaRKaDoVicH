@@ -1,4 +1,4 @@
-### Hi there 👋
+### hi my name is farrukh i created this site where you can find and buy various games and computer accessories.
 
 <!--
 **FaRKaDoVicH/FaRKaDoVicH** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
